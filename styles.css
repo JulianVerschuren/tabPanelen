@@ -1,0 +1,92 @@
+body{
+
+background-color: azure;	
+margin: 0px;
+background-image: url(images/news.jpg);
+background-size: cover;
+}
+
+#title{
+
+text-align: center;
+color: white;
+text-shadow: 2px 2px red;
+}
+
+.nieuws{
+width: 640px;
+margin: 0 auto;
+border: 9px solid black;
+background-color: ghostwhite;
+padding: 20px;
+border-radius: 25px;
+height: 1050px;
+}
+
+.buttons{
+
+overflow: hidden;
+padding: 0px 10px;
+display: inline-block;
+}
+
+
+
+
+.buttons li {
+
+list-style-type: none;
+float: left;
+border: 2px solid black;
+
+
+
+}
+
+.buttons li.actief{
+
+background-color: grey;
+
+}
+
+
+.buttons carnaval{
+
+background-color: green;
+
+}
+
+.pagina {
+	
+/*     display: none;*/
+
+}
+
+.pagina.actief{
+display: block !important;
+
+}
+
+a{
+
+
+color: firebrick;
+font-size: 2em;
+font-style: italic;
+font-weight: bold;
+
+}
+
+ul li{
+
+	
+padding: 10px;
+
+}
+
+footer{
+height:50px;
+background-color: azure;
+
+}
+
