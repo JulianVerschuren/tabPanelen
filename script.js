@@ -1,26 +1,29 @@
 $('.buttons').each( function(){
+//hey
+var activated = $(this);
 
-var dezeKnop = $(this);
-var actieveKnop = dezeKnop.find('li.actief');
-var link = actieveKnop.find('a');
-var actiefPaneel = $(link.attr('href'));
+var buttonActivated = activated.find('li.metterDaad');
 
-dezeKnop.on('click' , 'a', function(e) {
+var hyperLink = buttonActivated.find('a');
+
+var panelActivated = $(hyperLink.attr('href'));
+
+activated.on('click' , 'a', function(e) {
+
 e.preventDefault();
-var link = $(this);
 
-//alert(link.attr  ('href')  );
+var hyperLink = $(this);
+var bezichtigID = this.hash;
 
 
-var beoogdId = this.hash;
-//alert (beoogdId);
+if(bezichtigID && !hyperLink.parent().is('.metterDaad')){
 
-if(beoogdId && !link.parent().is('.actief')){
-actiefPaneel.removeClass('actief');
-actieveKnop.removeClass('actief');
+panelActivated.removeClass('metterDaad');
+buttonActivated.removeClass('metterDaad');
 
-actiefPaneel = $(beoogdId).addClass('actief');
-actieveKnop = link.parent().addClass('actief');
+
+panelActivated = $(bezichtigID).addClass('metterDaad');
+buttonActivated = hyperLink.parent().addClass('metterDaad');
 
 
 }
@@ -31,4 +34,4 @@ actieveKnop = link.parent().addClass('actief');
 
 });
 
-$('.pagina').css('display','none')
+$('.page').css('display','none')

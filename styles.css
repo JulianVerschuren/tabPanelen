@@ -43,7 +43,7 @@ border: 2px solid black;
 
 }
 
-.buttons li.actief{
+.buttons li.metterDaad{
 
 background-color: grey;
 
@@ -56,13 +56,13 @@ background-color: green;
 
 }
 
-.pagina {
+.page {
 	
 /*     display: none;*/
 
 }
 
-.pagina.actief{
+.page.metterDaad{
 display: block !important;
 
 }
